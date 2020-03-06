@@ -1,0 +1,22 @@
+{
+  "name": "@better_fly/mask-sensitive-fields",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fayeah/mask-sensitive-fields.git"
+  },
+  "keywords": [
+    "mask"
+  ],
+  "author": "betterfly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fayeah/mask-sensitive-fields/issues"
+  },
+  "homepage": "https://github.com/fayeah/mask-sensitive-fields#readme"
+}
