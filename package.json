@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,28 @@
   "bugs": {
     "url": "https://github.com/fayeah/mask-sensitive-fields/issues"
   },
-  "homepage": "https://github.com/fayeah/mask-sensitive-fields#readme"
+  "homepage": "https://github.com/fayeah/mask-sensitive-fields#readme",
+  "devDependencies": {
+    "ava": "^3.5.0"
+  },
+  "ava": {
+		"files": [
+			"test/**/*",
+			"!test/exclude-files-in-this-directory",
+			"!**/exclude-files-with-this-name.*"
+		],
+		"match": [],
+		"concurrency": 5,
+		"failFast": true,
+		"failWithoutAssertions": false,
+		"environmentVariables": {
+			"MY_ENVIRONMENT_VARIABLE": "some value"
+		},
+		"verbose": true,
+		"require": [],
+		"nodeArguments": [
+			"--trace-deprecation",
+			"--napi-modules"
+		]
+	}
 }

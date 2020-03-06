@@ -1,4 +1,4 @@
-var maskObject = require("./mask");
+const maskObject = require("./mask");
 
 module.exports = function maskSensitiveFields(originalValue, sensitiveFields) {
   if (!originalValue) {

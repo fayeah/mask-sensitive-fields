@@ -18,9 +18,9 @@ module.exports = function maskObject(sensitiveFields, target) {
         const targetValue = target[key];
         const isObjectOrArray = targetValue !== null && (typeof targetValue === "object");
         if (isObjectOrArray) {
-            return Object.assign(Object.assign({}, acc), { [key]: _.isArray(targetValue) ?
-                    targetValue.map(value => maskObject(sensitiveFields)(value)) :
-                    maskObject(sensitiveFields)(targetValue) });
+            return Object.assign(Object.assign({}, acc), { [key]: Array.isArray(targetValue) ?
+                    targetValue.map(value => maskObject(sensitiveFields, value)) :
+                    maskObject(sensitiveFields, targetValue) });
         }
         else {
             if (sensitiveFields.includes(key)) {
