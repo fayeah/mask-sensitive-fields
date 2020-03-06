@@ -1,6 +1,6 @@
 {
   "name": "@better_fly/mask-sensitive-fields",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,23 +23,23 @@
     "ava": "^3.5.0"
   },
   "ava": {
-		"files": [
-			"test/**/*",
-			"!test/exclude-files-in-this-directory",
-			"!**/exclude-files-with-this-name.*"
-		],
-		"match": [],
-		"concurrency": 5,
-		"failFast": true,
-		"failWithoutAssertions": false,
-		"environmentVariables": {
-			"MY_ENVIRONMENT_VARIABLE": "some value"
-		},
-		"verbose": true,
-		"require": [],
-		"nodeArguments": [
-			"--trace-deprecation",
-			"--napi-modules"
-		]
-	}
+    "files": [
+      "test/**/*",
+      "!test/exclude-files-in-this-directory",
+      "!**/exclude-files-with-this-name.*"
+    ],
+    "match": [],
+    "concurrency": 5,
+    "failFast": true,
+    "failWithoutAssertions": false,
+    "environmentVariables": {
+      "MY_ENVIRONMENT_VARIABLE": "some value"
+    },
+    "verbose": true,
+    "require": [],
+    "nodeArguments": [
+      "--trace-deprecation",
+      "--napi-modules"
+    ]
+  }
 }
